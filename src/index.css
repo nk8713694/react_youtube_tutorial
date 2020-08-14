@@ -1,11 +1,23 @@
 *{
     margin:0px;
     padding:0px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .heading{
-    background-color: blue;
+  color: blue;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 100px;
+  margin-bottom: 25px;;
 }
+.heading1{
+    color: red;
+    text-align: center;
+    font-weight: bold;
+   
+    margin-bottom: 25px;;
+  }
 .img-div{
    
     display: flex;

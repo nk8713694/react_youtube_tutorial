@@ -59,17 +59,23 @@ var  time = new Date().toLocaleTimeString();
   // );
 
 
+  // inline css
+
+  const heading ={
+    color:"red",
+    textTransform:'capitalize'
+  }
 
 
   ReactDOM.render(
       <>
-       <h1 className="heading ">kya dikhana hai ... 2nd argument kaha dikhana hai </h1>
-      <p>Top 5 net flix series</p>
+       <h1 style={{ color:"red", textTransform:'capitalize', textAlign:"center" }}>kya dikhana hai ... 2nd argument kaha dikhana hai </h1>
+      <p className="heading1">Top 5 net flix series</p>
        
        <div class="img-div">
-        <img src="https://picsum.photos/200/300"/>
-        <img src="https://picsum.photos/200/300"/>
-        <img src="https://picsum.photos/200/300"/>
+        <img src="https://i.picsum.photos/id/465/536/354.jpg?hmac=WEXd5GqsLQ1Wiw0QZw0SEHS4wVLetFejAcyF-jkNH3A"/>
+        <img src="https://i.picsum.photos/id/665/536/354.jpg?hmac=ZUP396BZVlcimGikLaoXdSIZnc1itqxDyMOlOJv84hU"/>
+        <img src="https://picsum.photos/536/354"/>
 
 
        </div>
