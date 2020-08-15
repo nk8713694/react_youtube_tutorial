@@ -86,42 +86,36 @@ var  time = new Date().toLocaleTimeString();
   //   );
 
   
-  var time= new Date().toLocaleTimeString().split(':');
+  var curDate= new Date().getHours();
 
-  var x= time[2].split(" ")
-  var hr=parseInt(time[0])
-  var ampm=x[1]
+  const cssStyle={}
+  var greeting=""
 
-const head1={
-  display:"inline-block",
-  textAlign:"center"
-}
-    const heading = {
-      display:"inline-block" ,
-      textAlign:"center"
-    }
-  var ans;
-  if((hr>=1 && hr<=11) && ampm=="AM" )
+  if(curDate >= 1 && curDate<=12)
   {
-    ans="Good Morning"
-    heading.color="red"
+    greeting="Good  Morning"
+    cssStyle.color="green"
   }
-  else if((hr>=1 && hr<7)&& ampm=="PM")
+  else if( curDate > 12 && curDate<=19 )
   {
-     ans="good afternoon"
-     heading.color="blue"
+    greeting="good afternoon"
+    cssStyle.color="orange"
   }
-  else if((hr>=7 && hr<=11) && ampm=="PM")
-  {
-    ans="good night"
-    heading.color="pink"
+  else{
+    greeting="good night"
+    cssStyle.color="pink"
   }
+
     ReactDOM.render(
       <>
      
         
+         <div>
 
-        <h1 style={head1}>hello nitish</h1> <h1 style={heading}> {`${ans}`}</h1>
+
+         <h1 >hello nitish <span style={cssStyle}> {`${greeting}`} </span></h1>
+         </div>
+        
        
         
        
