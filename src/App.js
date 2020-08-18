@@ -11,7 +11,7 @@ import Func from './Netflix'
 
 import Count from './lec30'
 
-
+import Count1 from './Challenge6'
 export default function App()
 {
    return (
@@ -22,7 +22,9 @@ export default function App()
     <h1> the mult of two nos is  {mult(2,3)}</h1> 
     <h1> the divide of two nos is  {divide(2,3)}</h1>   */}
 
-    <Count/>
+    {/* <Count/> */}
+
+    <Count1/>
 
     </>
 
