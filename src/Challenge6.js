@@ -14,12 +14,16 @@ function inSum()
    // console.log();
     
 }
+
+setInterval(
+    inSum, 1000);
     return(
       <>
        <div>
        <h1>{count}</h1>
       
-      <button onClick={inSum}> Click Me </button>
+      {/* <button onClick={inSum}> Click Me </button> */}
+      
        </div>
      
 
