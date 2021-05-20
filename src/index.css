@@ -2,3 +2,10 @@
 *{
     font-size: 40px;;
 }
+
+.active_class{
+    font-size: 20px;
+    color:red;
+    text-decoration: none !important;
+    text-underline-offset: 0;
+}
